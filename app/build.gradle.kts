@@ -32,11 +32,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -76,4 +76,11 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.48")
     kapt("androidx.hilt:hilt-compiler:1.0.0")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+
+    // Coil
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    //Carousel Card Slider
+    implementation("com.google.accompanist:accompanist-pager:0.20.0")
+    implementation("androidx.compose.ui:ui-util:1.5.4")
 }
